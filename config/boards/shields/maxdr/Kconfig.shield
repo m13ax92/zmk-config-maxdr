@@ -1,0 +1,5 @@
+config SHIELD_MAXDR_LEFT
+    def_bool $(shields_list_contains,maxdr_left)
+
+config SHIELD_MAXDR_RIGHT
+    def_bool $(shields_list_contains,maxdr_right)

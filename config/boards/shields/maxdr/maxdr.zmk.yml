@@ -1,0 +1,11 @@
+file_format: "1"
+id: maxdr
+name: maxdr split
+type: shield
+url: ""
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - maxdr_left
+  - maxdr_right

@@ -1,0 +1,26 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// STARTER-Keymap zum Testen (QWERTZ-nah). Reihenfolge = Matrix-Map aus maxdr.dtsi.
+// Die rechte Haelfte ist in der dtsi bereits entspiegelt -> hier ganz normal
+// von links nach rechts lesen/anpassen. Eigene Belegung: https://zmk.dev/docs/keymaps
+//
+// Form pro Hand (Spalten-Stagger 2-3-4-4-4-3 + 4 Daumen):
+//   Reihe0: 6 Tasten | Reihe1: 6 | Reihe2: 5 | Reihe3: 3 | Daumen: 4
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+//  ---------- LINKE HAND ----------          ---------- RECHTE HAND ----------
+    &kp TAB  &kp Q &kp W &kp E &kp R &kp T      &kp Z &kp U &kp I  &kp O   &kp P    &kp BSPC
+    &kp LCTRL &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K  &kp L   &kp SEMI &kp ENTER
+             &kp Y &kp X &kp C &kp V &kp B      &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+                   &kp N1 &kp N2 &kp N3                &kp N4 &kp N5 &kp N6
+    &kp LGUI &kp LALT &kp SPACE &kp LSHFT       &kp RSHFT &kp SPACE &kp RALT &kp RGUI
+            >;
+        };
+    };
+};

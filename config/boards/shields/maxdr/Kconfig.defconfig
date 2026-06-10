@@ -1,0 +1,16 @@
+if SHIELD_MAXDR_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "maxdr"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MAXDR_LEFT || SHIELD_MAXDR_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

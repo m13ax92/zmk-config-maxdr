@@ -1,0 +1,12 @@
+#include "maxdr.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 21 GPIO_ACTIVE_HIGH>   // P21 = col 0 (c1 pinky)
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>   // P20 = col 1 (c2)
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>   // P19 = col 2 (c3)
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>   // P18 = col 3 (c4)
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>   // P15 = col 4 (c5)
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>   // P14 = col 5 (c6 inner)
+        ;
+};
