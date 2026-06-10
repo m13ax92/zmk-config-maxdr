@@ -5,7 +5,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Auf stabiles Release gepinnt (NICHT main): main ist seit der
+      # Zephyr-4.1-Migration (Dez 2025) inkompatibel mit dem alten
+      # Board-Namen nice_nano_v2. v0.3.0 = letztes Release mit altem Layout.
+      revision: v0.3.0
       import: app/west.yml
   self:
     path: config
