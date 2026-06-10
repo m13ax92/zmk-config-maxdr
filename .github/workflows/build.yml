@@ -2,4 +2,6 @@ name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Auf v0.3.0 gepinnt (passend zu west.yml). Der @main-Workflow erzwingt
+    # die neue Zephyr-4.1-Board-Konvention und scheitert sonst NACH dem Build.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
